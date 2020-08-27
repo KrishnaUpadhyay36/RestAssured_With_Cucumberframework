@@ -1,0 +1,146 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-24T15:51:28.820Z",
+        "line": 13,
+        "name": "Validate AddPlace Api",
+        "description": "",
+        "id": "validating-place-api-s;validate-addplace-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2817141000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add place payload with \"ABhouse\" \"French\" \"Shaligram Signature\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ABhouse\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"French\"",
+                  "offset": 33
+                },
+                {
+                  "val": "\"Shaligram Signature\"",
+                  "offset": 42
+                }
+              ],
+              "location": "AddPlaceDefination.add_place_payload_with(String,String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4831542700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user calls \"AddPlaceApi\" with \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceApi\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 30
+                }
+              ],
+              "location": "AddPlaceDefination.user_calls_with_http_request(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 96504300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Place \"Added\" successfully with status code \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Added\"",
+                  "offset": 6
+                },
+                {
+                  "val": "\"200\"",
+                  "offset": 44
+                }
+              ],
+              "location": "AddPlaceDefination.place_successfully_with_status_code(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1528855000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Response body \"status\" is \"OK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"status\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"OK\"",
+                  "offset": 26
+                }
+              ],
+              "location": "AddPlaceDefination.response_body_something_is_something(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1778951800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify created place_id maps to \"ABhouse\" using \"GetPlaceApi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ABhouse\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"GetPlaceApi\"",
+                  "offset": 48
+                }
+              ],
+              "location": "AddPlaceDefination.verify_created_place_id_maps_to_using(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Validating place Api\u0027s",
+    "description": "",
+    "id": "validating-place-api-s",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/placevalidation.feature",
+    "tags": []
+  }
+]
